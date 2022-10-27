@@ -1,34 +1,22 @@
 # EXP-04-Interfacing a 16X2 type LCD display to LPC2148 ARM 7Microcontroller
-
-Name :
-
-Roll no :
-
-Date of experiment :
-
- 
-
-
+~~~
+Name : H.Syed Abdul Wasih
+Reg no : 212221240057
+Date of experiment : 14/10/2022
+~~~
 ## Interfacing a 16X2 type LCD display to LPC2148 ARM 7 Microcontroller 
-
 ## Aim: 
 To Interface 16X2 type LCD display to LPC2148 ARM 7 and write a code for displaying a string to it
 ## Components required:
 Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
-## Theory 
+## Theory :
  
-## LCD16X2 
+## LCD16X2 :
  
  ![image](https://user-images.githubusercontent.com/36288975/195774401-e3bffb44-0d3d-4b7e-b374-7a7a7ef60d48.png)
 
-
- 
- 
  ![image](https://user-images.githubusercontent.com/36288975/195773232-ab5dd9b0-99b7-4663-9bdf-6665fa93a052.png)
 Fig.01 16X2 LCD DISPLAY 
-
-
-
 
 Apart from the voltage supply connections the important pins from the programming perspective are the data lines(8-bit Data bus), Register select, Read/Write and Enable pin.
 
@@ -76,10 +64,10 @@ Figure -03 Proteus File Menu
   
     
  
-Step 3:An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
+Step 3: An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
   Figure -05 Proteus Design Sheet
  
-Step 4:To Select components, Click on the component mode button.
+Step 4: To Select components, Click on the component mode button.
  ![image](https://user-images.githubusercontent.com/36288975/195773645-6444563d-1372-4065-b5d4-ecad7f3d8172.png)
 
 Figure -06 Component Mode
@@ -120,9 +108,8 @@ Figure -12 Hex file for simulation
 
 Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
-
 ## Kiel - Program  
-```
+~~~
 #include<lpc214x.h>
 #include<stdint.h>
 #include<stdlib.h>
@@ -184,33 +171,22 @@ int main(void)
 {
 	
 	LCD_INIT();
-	LCD_STRING("Welcome to AI&DS");
+	LCD_STRING("Welcome to AI&ML");
 	LCD_CMD(0XC0);
-	LCD_STRING("212221230024");
+	LCD_STRING("212221240057");
 	
 	return 0;
 }
-
-```
-
-
-
-
-## Proteus simulation 
-
-
-
-![wwt1](https://user-images.githubusercontent.com/94882357/198190357-325620ed-ae0a-418b-bbaf-9b67a7912618.jpeg)
-![wwt2](https://user-images.githubusercontent.com/94882357/198190384-da92f6c4-4a47-4f9b-86eb-ed6ca17e984e.jpeg)
-
-##  layout Diagram 
-
-
-![wwt3](https://user-images.githubusercontent.com/94882357/198190405-57b5de79-8c89-4b20-9639-9126c2a6cb6e.jpeg)
-
+~~~
+## Proteus simulation: 
+### LCD OFF:
+![2](https://user-images.githubusercontent.com/91781810/195811475-5c2bf36b-1220-48cc-b7f8-ba7fab3f6ba8.jpg)
+### LCD ON:
+![1](https://user-images.githubusercontent.com/91781810/195811528-316bc48c-8dbc-4a04-978a-b18caa2dd93e.jpg)
+##  Layout Diagram: 
+![3](https://user-images.githubusercontent.com/91781810/195811664-c87b5312-d531-46ec-87e6-3f5e0bf2fa53.jpg)
 ## Result :
-
-Interfaced an LCD with ARM microcontroller is executed and displayed the strings  
+Interfaced an LCD with ARM microcontroller is executed and displayed the strings.
 
  
 
